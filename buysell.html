@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="referrer" content="origin">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>We Buy Used Records</title>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+            <a href="index.html">
+                <img src="./images/logo.svg" alt="Tone Army Records Logo">
+            </a>
+            <div class="info-block">
+                <h3 class="meBold">We Buy & Sell Used Records</h3>
+                <h4>Hours: Wednesday - Sunday 11am - 7pm</h4>
+                <h4>1460 Washington Blvd, Suite C1, Concord CA</h4>
+                <h4><a href="tel:+1-925-305-0392">925-305-0392</a></h4>
+            </div>
+
+        </div>
+
+        <div class="the-grid">
+            <div class="yellow-bg"></div>
+            <div class="orange-bar o1"></div>
+            <div class="orange-bar o2"></div>
+            <div class="brown-bar b1"></div>
+            <div class="brown-bar b2"></div>
+            <div class="box box-buy-instructions">
+                <img class="narrow-buy" src="./images/text-buy-narrow.svg" alt="We Buy and Sell Used Records">
+                <img class="wide-buy" src="./images/text-buy.svg" alt="We Buy and Sell Used Records">
+                <div class="policies">
+                    <div class="policy-text">
+                        <p>Tone Army Records is always looking for more vinyl to keep our bins full and our customers
+                            happy. If you have records you’d like to sell, bring them by - no appointment necessary.</p>
+                        <br>
+                        <p>Come in anytime during business hours and we’ll sort through your collection, make you a fair
+                            offer, and pay you on the spot. The whole process usually takes around 5-10 minutes, but up
+                            to 30 minutes for a larger collection.</p><br>
+                        <p>We pay cash and store credit for vinyl records, cassette tapes, and stereo equipment. We
+                            offer the most for your collection in the area and are highly recommended by customers.</p>
+                        <br>
+                        <p>*If you have a large collection, we’re happy to schedule an in-home buy if it’s a distance
+                            from the shop. Please call <a href="tel:+1-925-305-0392">925-305-0392</a> to setup a time
+                            for a home visit.</p>
+                    </div>
+                    <img src="./images/shop.jpg" alt="Photo of record shop interior">
+                </div>
+            </div>
+            <div class="box box-contact" id="the-connection">
+                <img src="./images/text-contact.svg" alt="Contact Us">
+                <form class="white-text" action="https://formspree.io/f/mqkgllzn" method="POST" id="contact-form">
+                    <form class="white-text" action="https:www.google.com/" method="POST" id="contact-form">
+                        <div class="output"></div>
+                        <input type="hidden" name="_subject" value="Tone Army Inquiry">
+                        <input type="hidden" name="_next" value="/thanks.html">
+                        <input id="id1" class="" type="text" name="name" placeholder="Name" required>
+                        <input id="id2" type="email" name="_replyto" placeholder="Email" required>
+                        <textarea id="id3" name="message" cols="38" rows="10" placeholder="Message" required></textarea>
+                        <button type="submit">Send Email</button>
+                        <!-- <button type="button" onclick="formValidation()">I Need Validation</button> -->
+                        <!-- <button type="button" onclick="clearContactForm()">Clear Form</button> -->
+                    </form>
+            </div>
+            <div class=" box box-connect">
+                <img class="connect-image" src="./images/text-connect.svg" alt="Connect on social media">
+                <a href="https://www.instagram.com/tonearmyrecords/?hl=en" class="hvr-grow" target="_blank">
+                    <img src="./images/logo-insta.svg" alt="Instagram">
+                </a>
+                <a href="https://www.facebook.com/tonearmyrecords" class="hvr-grow" target="_blank">
+                    <img src="./images/logo-fb.svg" alt="Facebook">
+                </a>
+                <a href="https://www.youtube.com/channel/UCTr6V6LZnjhSr1ypnH2rD5A" class="hvr-grow" target="_blank">
+                    <img src="./images/logo-yt.svg" alt="Youtube">
+                </a>
+                <!-- <a href="https://twitter.com/" class="hvr-grow" target="_blank">
+                    <img src="./images/logo-twitter.svg" alt="Twitter">
+                </a> -->
+            </div>
+        </div>
+
+        <div class="footer">
+
+            <div class="footer-text">
+                <h3>Navigate</h3>
+                <ul>
+                    <!-- <li><a href="buysell.html">Sell Your Records</a></li> -->
+                    <!-- <li><a href="">Contact Us</a></li> -->
+                    <li><a href="index.html">Home</a></li>
+                </ul>
+
+                <br>
+                <a href="https://www.scottwheeler.dev/" target="_blank">
+                    <p>Site design and code by Scott Wheeler ©2020</p>
+                </a>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        // function changeTextColor() {
+        //     // document.documentElement.style.setProperty("--form-text-color", "white");
+        //     var changes = document.getElementById('id1');
+        //     changes.style.color = 'red';
+        //     console.log(changes);
+
+
+        // }
+
+        // const printedOutput = document.querySelector('.output');
+
+
+        function clearContactForm() {
+            let nameVal = document.getElementById('id1').value;
+            let emailVal = document.getElementById('id2').value;
+            let messageVal = document.getElementById('id3').value;
+
+            if (nameVal || emailVal || messageVal != "") {
+                document.getElementById('contact-form').reset();
+            }
+        }
+
+        function timerFunction() {
+            window.setTimeout(clearContactForm, 100);
+        }
+
+        window.addEventListener("unload", timerFunction());
+
+
+        // function formValidation() {
+        //     let nameVal = document.getElementById('id1');
+        //     let emailVal = document.getElementById('id2');
+        //     let messageVal = document.getElementById('id3');
+
+        //     if ((nameVal.value == '') && (emailVal.value == '') && (messageVal.value == '')) {
+        //         nameVal.classList.add('textBoxWarn');
+        //         emailVal.classList.add('textBoxWarn');
+        //         messageVal.classList.add('textBoxWarn');
+        //         printedOutput.innerHTML = `*Please enter Name, email, and message then resubmit.`;
+        //     } else if (nameVal.value == '') {
+        //         nameVal.classList.add('textBoxWarn');
+        //         emailVal.classList.remove('textBoxWarn');
+        //         messageVal.classList.remove('textBoxWarn');
+        //         nameVal.focus();
+        //         // printedOutput.innerHTML = `Select tip percentage`;
+        //     } else if (emailVal.value == '') {
+        //         emailVal.classList.add('textBoxWarn');
+        //         nameVal.classList.remove('textBoxWarn');
+        //         messageVal.classList.remove('textBoxWarn');
+        //         emailVal.focus();
+        //         // printedOutput.innerHTML = `Enter bill amount`;
+        //     } else if (messageVal.value == '') {
+        //         messageVal.classList.add('textBoxWarn');
+        //         nameVal.classList.remove('textBoxWarn');
+        //         emailVal.classList.remove('textBoxWarn');
+        //         messageVal.focus();
+        //         // printedOutput.innerHTML = `Enter bill amount`;
+        //     } else {
+        //         nameVal.classList.remove('textBoxWarn');
+        //         emailVal.classList.remove('textBoxWarn');
+        //         messageVal.classList.remove('textBoxWarn');
+        //     }
+        // }
+    </script>
+
+</body>
