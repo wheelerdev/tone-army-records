@@ -599,6 +599,13 @@ h3 {
   height: 25%;
 }
 
+.box-connect-buy {
+  -ms-grid-row: 7;
+  -ms-grid-row-span: 1;
+  grid-row: 7 / 8;
+  margin-bottom: -75px;
+}
+
 @media screen and (max-width: 1200px) {
   .box-buy {
     padding: 0 50px;
@@ -786,6 +793,12 @@ h3 {
     -ms-grid-row: 10;
     -ms-grid-row-span: 1;
     grid-row: 10 / 11;
+  }
+  .box-connect-buy {
+    -ms-grid-row: 7;
+    -ms-grid-row-span: 1;
+    grid-row: 7 / 8;
+    margin-bottom: -100px;
   }
   .box-alvarez {
     -ms-grid-column: 2;
