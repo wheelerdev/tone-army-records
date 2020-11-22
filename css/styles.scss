@@ -217,6 +217,14 @@ h3 {
   }
 }
 
+.insta-feed {
+  width: 70%;
+  height: 320px;
+  // height: 0px;
+  // padding-top: 50%;
+  overflow: auto;
+}
+
 
 .box-directions {
   grid-column: 9 / 15;
@@ -479,12 +487,20 @@ h3 {
   .box-buy {
     padding: 0px;
   }
+
+  .insta-feed {
+    height: 245px;
+  }
 }
 
 @media screen and (max-width: 805px) {
   // html {
   //   font-size: 13px;
   // }
+
+  .insta-feed {
+    height: 205px;
+  }
 
   .box-connect {
     a {
@@ -603,6 +619,10 @@ h3 {
     grid-column: 3 / 8;
   }
 
+  .insta-feed {
+    height: 320px;
+  }
+
   .box-buy-instructions {
     grid-column: 2 / 9;
     grid-row: 3 / 4;
@@ -698,6 +718,10 @@ h3 {
     grid-column: 2 / 9;
   }
 
+  .insta-feed {
+    height: 260px;
+  }
+
   .box-directions {
     grid-column: 2 / 9;
   }
@@ -745,5 +769,9 @@ h3 {
 
   .the-grid {
     row-gap: 12px;
+  }
+
+  .insta-feed {
+    height: 225px;
   }
 }
