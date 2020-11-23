@@ -853,6 +853,18 @@ h3 {
   }
 }
 
+@media screen and (max-width: 550px) {
+  .insta-feed {
+    height: 285px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .insta-feed {
+    height: 260px;
+  }
+}
+
 @media screen and (max-width: 450px) {
   .the-grid {
     row-gap: 15px;
@@ -908,6 +920,12 @@ h3 {
   }
   .box-alvarez img {
     width: 70%;
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .insta-feed {
+    height: 240px;
   }
 }
 

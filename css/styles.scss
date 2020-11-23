@@ -704,6 +704,18 @@ h3 {
 
 }
 
+@media screen and (max-width: 550px) {
+  .insta-feed {
+    height: 285px;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  .insta-feed {
+    height: 260px;
+  }
+}
+
 @media screen and (max-width: 450px) {
 
   .the-grid {
@@ -760,6 +772,12 @@ h3 {
     }
   }
 
+}
+
+@media screen and (max-width: 420px) {
+  .insta-feed {
+    height: 240px;
+  }
 }
 
 @media screen and (max-width: 390px) {
