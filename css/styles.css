@@ -915,6 +915,9 @@ h3 {
     -ms-grid-column-span: 5;
     grid-column: 3 / 8;
   }
+  .box-connect-buy {
+    margin-bottom: -75px;
+  }
   .connect-image {
     display: none;
   }
@@ -935,6 +938,9 @@ h3 {
   }
   .insta-feed {
     height: 225px;
+  }
+  .box-connect-buy {
+    margin-bottom: -60px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

@@ -759,7 +759,10 @@ h3 {
 
   .box-connect {
     grid-column: 3 / 8;
-    // grid-row: 10 / 11;
+  }
+
+  .box-connect-buy {
+    margin-bottom: -75px;
   }
 
   .connect-image {
@@ -781,9 +784,6 @@ h3 {
 }
 
 @media screen and (max-width: 390px) {
-  // html {
-  //   font-size: 12px;
-  // }
 
   .the-grid {
     row-gap: 12px;
@@ -791,5 +791,9 @@ h3 {
 
   .insta-feed {
     height: 225px;
+  }
+
+  .box-connect-buy {
+    margin-bottom: -60px;
   }
 }
