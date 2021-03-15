@@ -1,3 +1,4 @@
+@import url("https://use.typekit.net/vmj0mgz.css");
 @font-face {
   @font-face {
     font-family: "Futura";
@@ -396,7 +397,7 @@ h3 {
   width: 20%;
 }
 
-.box-alvarez {
+.box-video {
   -ms-grid-column: 2;
   -ms-grid-column-span: 13;
   grid-column: 2 / 15;
@@ -417,12 +418,21 @@ h3 {
       justify-content: space-around;
 }
 
-.box-alvarez img {
+.box-video .video-text {
   width: 40%;
   margin: 30px 0 30px 0px;
 }
 
-.box-alvarez iframe {
+.box-video .video-text h1 {
+  font-family: "cooper-black-std", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: var(--nice-orange);
+  margin: 0;
+  line-height: 1.4em;
+}
+
+.box-video iframe {
   width: 45%;
   padding: 30px 0;
 }
@@ -815,7 +825,7 @@ h3 {
     grid-row: 7 / 8;
     margin-bottom: -100px;
   }
-  .box-alvarez {
+  .box-video {
     -ms-grid-column: 2;
     -ms-grid-column-span: 7;
     grid-column: 2 / 9;
@@ -827,13 +837,11 @@ h3 {
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  .box-alvarez img {
-    width: 70%;
-  }
-  .box-alvarez img {
+  .box-video .video-text {
+    width: 75%;
     margin-top: 25px;
   }
-  .box-alvarez iframe {
+  .box-video iframe {
     width: 85%;
     padding-bottom: 0px;
   }
@@ -888,7 +896,7 @@ h3 {
     grid-column: 2 / 9;
   }
   .box-wide,
-  .box-alvarez {
+  .box-video {
     -ms-grid-column: 2;
     -ms-grid-column-span: 7;
     grid-column: 2 / 9;
@@ -898,11 +906,11 @@ h3 {
             flex-direction: column;
   }
   .box-wide img,
-  .box-alvarez img {
+  .box-video img {
     width: 70%;
   }
   .box-wide img:nth-of-type(2),
-  .box-alvarez img:nth-of-type(2) {
+  .box-video img:nth-of-type(2) {
     margin-top: 0px;
   }
   .box-contact {
@@ -921,8 +929,8 @@ h3 {
   .connect-image {
     display: none;
   }
-  .box-alvarez img {
-    width: 70%;
+  .box-video .video-text {
+    width: 85%;
   }
 }
 
